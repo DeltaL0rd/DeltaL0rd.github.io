@@ -4,17 +4,31 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Privacy Policy - Studio 010</title>
-<style>body{font-family:system-ui,Segoe UI,Roboto,sans-serif;max-width:640px;margin:10vh auto;padding:0 16px;line-height:1.8;color:#1b1f23;text-align:center}a{color:#0b6bcb}ul{list-style:none;padding:0}</style>
+<style>
+:root{--bg:#0b0820;--p:#a855f7;--c:#22d3ee;--y:#facc15;--t:#eceaf8}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--t);background:radial-gradient(1200px 700px at 50% -10%,#2a1660 0%,var(--bg) 60%) fixed;text-align:center;padding:48px 16px}
+h1{font-size:clamp(2rem,7vw,3rem);margin:0;background:linear-gradient(90deg,var(--c),var(--p),var(--y));-webkit-background-clip:text;background-clip:text;color:transparent}
+p.sub{color:#b9b3d8;letter-spacing:.2em;text-transform:uppercase;font-size:.8rem;margin:.5rem 0 2rem}
+.list{max-width:460px;margin:0 auto;display:grid;gap:14px}
+.lvl{display:flex;align-items:center;gap:14px;padding:16px 18px;border-radius:14px;text-decoration:none;color:var(--t);background:rgba(255,255,255,.05);border:1px solid rgba(168,85,247,.45);transition:transform .15s,border-color .15s,box-shadow .15s;text-align:left}
+.lvl:hover{transform:translateY(-3px);border-color:var(--c);box-shadow:0 0 22px rgba(34,211,238,.35)}
+.n{flex:none;width:38px;height:38px;border-radius:10px;display:grid;place-items:center;font-weight:900;color:#0b0820;background:linear-gradient(180deg,#facc15,#f59e0b)}
+.name{font-weight:700;font-size:1.05rem}
+.go{margin-left:auto;color:var(--c);font-size:1.3rem}
+.back{display:inline-block;margin-top:2rem;color:var(--c);text-decoration:none;border-bottom:1px dashed var(--c)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
 </head>
 <body>
 <h1>Privacy Policy</h1>
-<p>Select a game:</p>
-<ul>
-<li><a href="BalancerPrivacyPolicy/privacy-policy.html">Balancer</a></li>
-<li><a href="dreamdecor/privacy.html">Dream Decor</a></li>
-<li><a href="neonballrunner/privacy.html">Neon Ball Runner</a></li>
-<li><a href="sleepystar/privacy.html">Sleepy Star</a></li>
-</ul>
-<p><a href="./">&larr; Back</a></p>
+<p class="sub">Select your game</p>
+<div class="list">
+  <a class="lvl" href="BalancerPrivacyPolicy/privacy-policy.html"><span class="n">1</span><span class="name">Balancer</span><span class="go">&rsaquo;</span></a>
+  <a class="lvl" href="dreamdecor/privacy.html"><span class="n">2</span><span class="name">Dream Decor</span><span class="go">&rsaquo;</span></a>
+  <a class="lvl" href="neonballrunner/privacy.html"><span class="n">3</span><span class="name">Neon Ball Runner</span><span class="go">&rsaquo;</span></a>
+  <a class="lvl" href="sleepystar/privacy.html"><span class="n">4</span><span class="name">Sleepy Star</span><span class="go">&rsaquo;</span></a>
+</div>
+<a class="back" href="./">&larr; Back to home</a>
 </body>
 </html>

@@ -4,11 +4,42 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Studio 010</title>
-<style>body{font-family:system-ui,Segoe UI,Roboto,sans-serif;max-width:640px;margin:10vh auto;padding:0 16px;line-height:1.6;color:#1b1f23;text-align:center}a{color:#0b6bcb}</style>
+<meta name="description" content="Studio 010 - indie mobile game studio.">
+<style>
+:root{--bg:#0b0820;--p:#a855f7;--c:#22d3ee;--y:#facc15;--t:#eceaf8}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--t);background:radial-gradient(1200px 700px at 50% -10%,#2a1660 0%,var(--bg) 60%);display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;position:relative}
+.grid{position:fixed;inset:auto 0 0 0;height:45vh;background:linear-gradient(transparent,rgba(34,211,238,.12)),repeating-linear-gradient(90deg,rgba(168,85,247,.35) 0 1px,transparent 1px 60px),repeating-linear-gradient(0deg,rgba(168,85,247,.35) 0 1px,transparent 1px 40px);transform:perspective(300px) rotateX(55deg);transform-origin:bottom;opacity:.5;animation:slide 3s linear infinite}
+@keyframes slide{to{background-position:0 0,0 0,0 40px}}
+.orb{position:fixed;border-radius:50%;filter:blur(2px);opacity:.8;animation:float 7s ease-in-out infinite}
+.o1{width:14px;height:14px;background:var(--c);top:18%;left:12%;box-shadow:0 0 20px var(--c)}
+.o2{width:20px;height:20px;background:var(--p);top:28%;right:14%;box-shadow:0 0 24px var(--p);animation-delay:-2s}
+.o3{width:10px;height:10px;background:var(--y);top:62%;left:20%;box-shadow:0 0 16px var(--y);animation-delay:-4s}
+.o4{width:16px;height:16px;background:var(--c);top:55%;right:22%;box-shadow:0 0 20px var(--c);animation-delay:-1s}
+@keyframes float{50%{transform:translateY(-22px)}}
+main{position:relative;z-index:1;padding:24px 16px}
+.logo{font-size:clamp(2.6rem,10vw,5rem);font-weight:900;letter-spacing:.04em;margin:0;background:linear-gradient(90deg,var(--c),var(--p),var(--y));-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 18px rgba(168,85,247,.55));animation:glow 3s ease-in-out infinite}
+@keyframes glow{50%{filter:drop-shadow(0 0 30px rgba(34,211,238,.7))}}
+.tag{margin:.4rem 0 2.2rem;color:#b9b3d8;letter-spacing:.3em;font-size:.85rem;text-transform:uppercase}
+.btn{display:inline-block;padding:14px 34px;border-radius:14px;font-weight:800;letter-spacing:.06em;text-decoration:none;color:#0b0820;background:linear-gradient(180deg,#facc15,#f59e0b);box-shadow:0 6px 0 #b45309,0 0 24px rgba(250,204,21,.4);transition:transform .1s,box-shadow .1s}
+.btn:hover{transform:translateY(2px);box-shadow:0 4px 0 #b45309,0 0 32px rgba(250,204,21,.6)}
+.btn:active{transform:translateY(6px);box-shadow:0 0 0 #b45309}
+.contact{margin-top:2.2rem;font-size:.95rem;color:#b9b3d8}
+.contact a{color:var(--c);text-decoration:none;border-bottom:1px dashed var(--c)}
+footer{position:fixed;bottom:12px;left:0;right:0;font-size:.75rem;color:#7f78a8;z-index:1}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
 </head>
 <body>
-<h1>Studio 010</h1>
-<p><a href="privacy.html">Privacy Policy</a></p>
-<p>Contact: <a href="mailto:raovikas603@gmail.com">raovikas603@gmail.com</a></p>
+<div class="grid"></div>
+<span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span><span class="orb o4"></span>
+<main>
+  <h1 class="logo">STUDIO 010</h1>
+  <p class="tag">Indie Mobile Games</p>
+  <a class="btn" href="privacy.html">&#127918; PRIVACY POLICY</a>
+  <p class="contact">Contact: <a href="mailto:raovikas603@gmail.com">raovikas603@gmail.com</a></p>
+</main>
+<footer>&copy; 2026 Studio 010</footer>
 </body>
 </html>
