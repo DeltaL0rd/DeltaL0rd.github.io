@@ -3,31 +3,75 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Privacy Policy - Studio 010</title>
+<title>Our Games - Studio 010</title>
 <style>
 :root{--bg:#0b0820;--p:#a855f7;--c:#22d3ee;--y:#facc15;--t:#eceaf8}
 *{box-sizing:border-box}
-body{margin:0;min-height:100vh;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--t);background:radial-gradient(1200px 700px at 50% -10%,#2a1660 0%,var(--bg) 60%) fixed;text-align:center;padding:48px 16px}
-h1{font-size:clamp(2rem,7vw,3rem);margin:0;background:linear-gradient(90deg,var(--c),var(--p),var(--y));-webkit-background-clip:text;background-clip:text;color:transparent}
-p.sub{color:#b9b3d8;letter-spacing:.2em;text-transform:uppercase;font-size:.8rem;margin:.5rem 0 2rem}
-.list{max-width:460px;margin:0 auto;display:grid;gap:14px}
-.lvl{display:flex;align-items:center;gap:14px;padding:16px 18px;border-radius:14px;text-decoration:none;color:var(--t);background:rgba(255,255,255,.05);border:1px solid rgba(168,85,247,.45);transition:transform .15s,border-color .15s,box-shadow .15s;text-align:left}
-.lvl:hover{transform:translateY(-3px);border-color:var(--c);box-shadow:0 0 22px rgba(34,211,238,.35)}
-.n{flex:none;width:38px;height:38px;border-radius:10px;display:grid;place-items:center;font-weight:900;color:#0b0820;background:linear-gradient(180deg,#facc15,#f59e0b)}
-.name{font-weight:700;font-size:1.05rem}
-.go{margin-left:auto;color:var(--c);font-size:1.3rem}
-.back{display:inline-block;margin-top:2rem;color:var(--c);text-decoration:none;border-bottom:1px dashed var(--c)}
+body{margin:0;min-height:100vh;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--t);background:radial-gradient(1200px 700px at 50% -10%,#2a1660 0%,var(--bg) 60%) fixed;text-align:center;padding:48px 16px 64px}
+h1{font-size:clamp(2rem,7vw,3.2rem);margin:0;background:linear-gradient(90deg,var(--c),var(--p),var(--y));-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 16px rgba(168,85,247,.5))}
+p.sub{color:#b9b3d8;letter-spacing:.25em;text-transform:uppercase;font-size:.8rem;margin:.5rem 0 2.2rem}
+.list{max-width:560px;margin:0 auto;display:grid;gap:16px}
+.card{display:flex;align-items:center;gap:16px;padding:16px;border-radius:18px;text-align:left;background:rgba(255,255,255,.05);border:1px solid rgba(168,85,247,.45);transition:transform .15s,border-color .15s,box-shadow .15s}
+.card:hover{transform:translateY(-3px);border-color:var(--c);box-shadow:0 0 24px rgba(34,211,238,.3)}
+.icon{flex:none;width:84px;height:84px;border-radius:20px;object-fit:cover;box-shadow:0 0 0 2px rgba(255,255,255,.12),0 8px 20px rgba(0,0,0,.45)}
+.info{min-width:0;flex:1}
+.name{font-weight:800;font-size:1.15rem;margin:0}
+.tag{margin:.2rem 0 .7rem;color:#b9b3d8;font-size:.88rem}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.btn{display:inline-block;padding:8px 16px;border-radius:10px;font-weight:800;font-size:.82rem;letter-spacing:.04em;text-decoration:none;color:#0b0820;background:linear-gradient(180deg,#facc15,#f59e0b);box-shadow:0 4px 0 #b45309;transition:transform .1s,box-shadow .1s}
+.btn:hover{transform:translateY(2px);box-shadow:0 2px 0 #b45309}
+.btn.soon{background:rgba(255,255,255,.1);color:#b9b3d8;box-shadow:none;cursor:default;border:1px dashed rgba(255,255,255,.3)}
+.btn.soon:hover{transform:none}
+.pp{color:var(--c);font-size:.85rem;text-decoration:none;border-bottom:1px dashed var(--c)}
+.back{display:inline-block;margin-top:2.2rem;color:var(--c);text-decoration:none;border-bottom:1px dashed var(--c)}
+@media (max-width:420px){.icon{width:68px;height:68px}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 </head>
 <body>
-<h1>Privacy Policy</h1>
-<p class="sub">Select your game</p>
+<h1>Our Games</h1>
+<p class="sub">Studio 010</p>
 <div class="list">
-  <a class="lvl" href="balancer/privacy.html"><span class="n">1</span><span class="name">Balancer</span><span class="go">&rsaquo;</span></a>
-  <a class="lvl" href="dreamdecor/privacy.html"><span class="n">2</span><span class="name">Dream Decor</span><span class="go">&rsaquo;</span></a>
-  <a class="lvl" href="neonballrunner/privacy.html"><span class="n">3</span><span class="name">Neon Ball Runner</span><span class="go">&rsaquo;</span></a>
-  <a class="lvl" href="sleepystar/privacy.html"><span class="n">4</span><span class="name">Sleepy Star</span><span class="go">&rsaquo;</span></a>
+
+  <!-- To go live: replace the <span class="btn soon"> with
+       <a class="btn" href="PLAY STORE LINK">&#9654; GET ON GOOGLE PLAY</a> -->
+
+  <div class="card">
+    <img class="icon" src="icons/balancer.jpg" alt="Balancer icon">
+    <div class="info">
+      <h2 class="name">Balancer</h2>
+      <p class="tag">Roll smart. Keep your balance.</p>
+      <div class="row"><span class="btn soon">COMING SOON</span><a class="pp" href="balancer/privacy.html">Privacy Policy</a></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <img class="icon" src="icons/neonballrunner.png" alt="Neon Ball Runner icon">
+    <div class="info">
+      <h2 class="name">Neon Ball Runner</h2>
+      <p class="tag">Race through the neon glow.</p>
+      <div class="row"><span class="btn soon">COMING SOON</span><a class="pp" href="neonballrunner/privacy.html">Privacy Policy</a></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <img class="icon" src="icons/sleepystar.png" alt="Sleepy Star icon">
+    <div class="info">
+      <h2 class="name">Sleepy Star</h2>
+      <p class="tag">Decorate a cozy bedroom, one sticker at a time.</p>
+      <div class="row"><span class="btn soon">COMING SOON</span><a class="pp" href="sleepystar/privacy.html">Privacy Policy</a></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <img class="icon" src="icons/dreamdecor.svg" alt="Dream Decor icon">
+    <div class="info">
+      <h2 class="name">Dream Decor</h2>
+      <p class="tag">Design your dream home.</p>
+      <div class="row"><span class="btn soon">COMING SOON</span><a class="pp" href="dreamdecor/privacy.html">Privacy Policy</a></div>
+    </div>
+  </div>
+
 </div>
 <a class="back" href="./">&larr; Back to home</a>
 </body>
